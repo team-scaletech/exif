@@ -1,0 +1,55 @@
+{
+    "name": "exif",
+    "version": "0.0.1",
+    "description": "Removes GPS metadata from images and videos",
+    "main": "lib/index.js",
+    "dependencies": {
+        "@xoi/gps-metadata-remover": "^1.1.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "7.18.10",
+        "@babel/core": "^7.11.0",
+        "@babel/plugin-transform-modules-commonjs": "^7.11.0",
+        "@babel/preset-env": "^7.11.0",
+        "@babel/preset-flow": "^7.11.0",
+        "babel-plugin-transform-remove-console": "^6.9.4",
+        "ffprobe": "^1.1.0",
+        "ffprobe-static": "^3.0.0",
+        "flow-bin": "^0.109.0",
+        "flow-copy-source": "^2.0.9",
+        "gm": "^1.23.1",
+        "hasha": "^5.2.0",
+        "is-corrupted-jpeg": "^1.0.2",
+        "jest": "^26.6.3",
+        "nodemon": "2.0.20",
+        "prettier": "^1.18.2",
+        "prettier-eslint": "^9.0.0",
+        "prettier-eslint-cli": "^5.0.0",
+        "uuid": "^3.3.2"
+    },
+    "scripts": {
+        "test": "jest",
+        "test-multiple": "for i in {1..10}; do jest --runInBand --silent || (echo 'Failed after $i attempts' && break); done"
+    },
+    "keywords": [
+        "exif",
+        "gps",
+        "metadata",
+        "jpeg",
+        "jpg",
+        "mp4",
+        "mov",
+        "png",
+        "tiff",
+        "erase",
+        "delete",
+        "remove",
+        "js",
+        "images",
+        "privacy",
+        "web",
+        "mobile",
+        "geolocation",
+        "location"
+    ]
+}
